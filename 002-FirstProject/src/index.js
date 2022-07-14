@@ -19,7 +19,7 @@ app.post("/account", (req, res) => {
   );
 
   if (customerAlreadyExists) {
-   return res.status(400).json({ error: "Customer already exists!" })
+    return res.status(400).json({ error: "Customer already exists!" })
   }
 
   customers.push({
@@ -33,4 +33,4 @@ app.post("/account", (req, res) => {
 });
 
 app.listen(3333);
-console.log('Server is running! 👻')
+console.log('Server is running! 👻')``
